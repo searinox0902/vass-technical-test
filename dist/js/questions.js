@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.questions=void 0;var _Question=require("../models/Question.js"),_data=require("./data.js"),questions=_data.data.map(function(e){return new _Question.Question(e.question,e.choices,e.answer)});exports.questions=questions;
