@@ -1,3 +1,19 @@
+/*-----------------
+# Import custom typography
+-------------------*/ 
+
+@font-face {
+    font-family: HkGuiseRegular;
+    src: url('../fonts/HK_Guise_Regular.otf');
+    font-weight: regular;
+}
+
+@font-face {
+    font-family: HkGuiseBold;
+    src: url('../fonts/HK_Guise_Bold.otf');
+    font-weight: bold;
+}
+
 /*------------------*
 # Headings
 *------------------*/
@@ -9,8 +25,26 @@
 h1, h2, h3, h4, h5, h6 {
     color: $color-black;
     margin: $heading-spacing;
+    font-family: HkGuiseBold;
+}
+p{
+    font-family: HkGuiseRegular;
+}
+h2{
+    line-height: 1.88;
 }
 
+a{
+    font-family: HkGuiseRegular;
+    font-size: 0.875rem;
+}
+
+.font{
+    &__bolder{
+        font-family: HkGuiseBold;
+        font-weight: 900;
+    }
+}
 /*
  * Heading font sizes
 */
@@ -37,4 +71,13 @@ h5 {
 
 h6 {
     font-size: $h6-size;
+}
+
+
+/* TEXT */
+
+.text{
+    &-white{
+        color: #fff;
+    }
 }

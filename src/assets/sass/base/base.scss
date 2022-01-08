@@ -1,0 +1,62 @@
+
+figure{
+    margin: 0 !important;
+
+    img{
+        width: 100%;
+        display: block;
+    }
+}
+a{
+    text-decoration: none;
+}
+hr{
+    margin: 0 !important;
+}
+
+.navbar{
+    padding-top: 0;
+}
+
+/* CUSTOM COLOR */
+
+.bg-transparent{
+    background-color: transparent;
+}
+
+/* CUSTOM UTILITIES */
+
+.border{
+    &__start{
+        border-left: 2px solid #000;
+    }
+}
+
+.img{
+    &__w{
+        &-1{
+            max-width: 1rem;
+        }
+
+        &-2{
+            max-width: 2rem;
+        }
+    }
+}
+
+.flex{
+    &-wrap{
+        flex-wrap: wrap;
+    }
+}
+
+.section{
+    padding: 3rem;
+}
+
+
+@media screen and (max-width: 767px) {  
+    .section{
+        padding: 0rem;
+    }
+}
